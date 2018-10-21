@@ -34,7 +34,6 @@ public class ArrayQueue implements Queue {
 		Object[] b = new Object[arr.length * 2];
 		tail = 0;
 		for (int i = head; i < arr.length + head; i++) {
-			System.out.println(i + " Tail: " + tail);
 			b[tail++] = arr[(i) % arr.length];
 		}	
 
